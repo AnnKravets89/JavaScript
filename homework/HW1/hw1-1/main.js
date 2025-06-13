@@ -1,0 +1,27 @@
+let hello = `hello`;
+let owu = `owu`;
+let com = `com`;
+let ua = `ua`;
+let one = 1;
+let ten = 10;
+let negative = -999;
+let n = 123;
+let pi = 3.14;
+let point = 2.7;
+let six = 16;
+let t = true;
+let f = false;
+
+console.log(hello);
+console.log(owu);
+console.log(com);
+console.log(ua);
+console.log(one);
+console.log(ten);
+console.log(negative);
+console.log(n);
+console.log(pi);
+console.log(point);
+console.log(six);
+console.log(t);
+console.log(f);
