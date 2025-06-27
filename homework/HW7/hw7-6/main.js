@@ -17,7 +17,7 @@ function Car(model, maker, yearOfRelease, maxSpeed, engineCapacity) {
     }
     this.changeYear = function(year) {
 
-        if (yearOfRelease > 1815) this.yearOfRelease = year;
+        if (year > 1815) this.yearOfRelease = year;
 
     }
     this.addDriver = function (driver) {
