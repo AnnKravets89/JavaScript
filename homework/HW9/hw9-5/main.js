@@ -74,15 +74,15 @@ for (const course of coursesArray) {
     let courseTitle = document.createElement('div');
     courseTitle.innerText = course.title;
 
-    let container = document.createElement('div');
-    container.style.display = 'flex';
-    container.style.gap = '20px';
-
     let mDuration = document.createElement('div');
     mDuration.innerText = course.monthDuration;
+    mDuration.style.display = 'inline-block';
+    mDuration.style.marginRight = '20px';
 
     let hDuration = document.createElement('div');
     hDuration.innerText = course.hourDuration;
+    hDuration.style.display = 'inline-block';
+    hDuration.style.marginRight = '20px';
 
     let listModules = document.createElement('ul');
 
@@ -93,7 +93,6 @@ for (const course of coursesArray) {
             listModules.appendChild(moduleItem);
         }
 
-    container.append(mDuration, hDuration);
-    divCourse.append(courseTitle, container, listModules);
+    divCourse.append(courseTitle, mDuration, hDuration, listModules);
     document.body.appendChild(divCourse);
 }
